@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootsrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./activity.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" 
+     crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" 
+    rel="stylesheet">    
+    <!-- Title -->
+    <title>Bootstrap Portfolio</title>
+</head>
+<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top text-uppercase">
+        <div class="container-lg">
+          <a class="navbar-brand" href="#"><img src="
+            https://onecodecamp.com/wp-content/uploads/247logo_final-11.png" id="logopic" alt="Logo"> My Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-link active px-lg-4 rounded" href="#">Home</a>
+              <a class="nav-link px-lg-4 rounded" href="#">Designs</a>
+              <a class="nav-link px-lg-4 rounded" href="#">Bio</a>
+              <a class="nav-link px-lg-4 rounded" href="#">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+       <!-- main image intro-->
+       <section id="intro">
+        <div class="container-lg mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center text-md-start">
+                <h1>
+                    <div class="display-2 ">Hi/こんにちは, <b class="fw-bold">I'm Nelson</b></div>
+                    <div class="fs-4 text-muted"> JUNIOR WEB DEV</div>
+                </h1>
+                    <a href="#contactme" class="btn btn-secondary btn-md">Lets Design</a>
+                    <a href="#aboutme" class="btn btn-white btn btn-outline-info
+                     btn-md border border-primary">About Me</a>
+                </div>
+                <div class="div col-m5 text-center" id="profpic">
+                    <img class="img-fluid rounded-circle mt-3" src="./assets/meself.jpg" alt="My Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section id="aboutme">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2 class="fw-bold fst-italic card-title">About me...</h2>
+            </div>
+
+            <div class="row my-5 align-item-center justify-content-center">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-warning bg-light">
+                        <div class="card-body text-center py-4">
+                            <p class="lead text-muted">Hi, my name is <b>John Nelson Tenorio</b>. I'm 22 years old, 
+                                a college graduate of EAC-Manila and an aspiring web developer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Accordion-->>
+
+        <div class="accordion" id="accordionExample">
+            <div class="container-lg accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Educational Background
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <br><br>
+
+            <div class="container-lg accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Skills/Training
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+  
+              <br><br>
+            
+            <div id="contactme" class="container-lg accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Contact Info
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> 
+                  <ul>
+                        <li>
+                            <a href="https://www.facebook.com" target=_blank>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" height="15" width="15">
+            </a>Facebook: https://www.messenger.com/t/100003878602883</li>
+                        <li>
+                            <a href="https://son-el.github.io/fcb-portfolio/" target=_blank>
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg7xbHs0xXwKjAvkjrzJ4rA6dVSjo5QjaFoWb74cJsVA&s" height="15" width="15">
+                                </a>Github: https://github.com/Son-EL/fcb-portfolio/blob/master/style.css.</li>
+                        <li>
+                            <a href="mailto:sonel.jtenorio23@gmail.com" target=_blank>
+                                <img src="https://banner2.cleanpng.com/20180718/vws/kisspng-email-logo-bounce-address-computer-icons-message-online-application-5b4f433eed6ac1.5937710415319212149725.jpg" height="15" width="15">
+                                </a>Email: example.occ@email.com.</li>
+                        <li>Tel/Phone #: +63985 123 5432</li>
+                    </ul>
+                  <button type="button" class="btn btn-success">My CV</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
